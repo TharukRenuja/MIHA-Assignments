@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="https://te.legra.ph/file/c1234ca32820fd63b2689.jpg" type="image/x-icon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tharukrenuja.is-a.dev/Miha-Assignment-02/">
+    <meta property="og:name" content="Assignment 02">
+    <meta property="og:description" content="Roll A Dice Game | Assignment 02 for Miha Institute">
+    <meta property="og:image" content="https://te.legra.ph/file/c1234ca32820fd63b2689.jpg">
+
+    <title>Assignment 02 | MIHA</title>
+</head>
+<body>
+    <div class="intro" id="intro">
+        <h1 class="title">Let's Roll A Dice</h1>
+        <p class="subtitle">Enter Players Name & Let's Roll</p>
+        <div class="info">
+            <input type="text" id="player1" placeholder="Player 1"><br>
+            <input type="text" id="player2" placeholder="Player 2"><br>
+            <center>
+                <button class="info-btn" onclick="getNames()">Let's Roll</button>
+            </center>
+        </div>
+    </div>
+    <div class="play" id="play">
+        <h1 class="play-title" id="status">Let's Roll the Dice</h1>
+        <div class="dice">
+            <div class="dice-box">
+                <p class="play-subtitle" id="player1Name">Player 1</p>
+                <img class="img-1 img" src="assets/img/dice-1.png" alt="dice-1" width="100px">
+                <p class="play-counts"><b>Won:</b> <span id="player1Counts">0 Rolls</span></p>
+            </div>
+            <div class="dice-box">
+                <p class="play-subtitle" id="player2Name">Player 2</p>
+                <img class="img-2 img" src="assets/img/dice-1.png" alt="dice-1" width="100px">
+                <p class="play-counts"><b>Won:</b> <span id="player2Counts">0 Rolls</span></p>
+            </div>
+        </div>
+        <button class="play-btn" id="roll" onclick="roll()">Let's Roll</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
