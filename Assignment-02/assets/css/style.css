@@ -23,6 +23,7 @@ body {
     box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    text-align: center;
 }
 
 .title {
@@ -70,6 +71,12 @@ button:hover {
     text-align: center;
 }
 
+.wininfo {
+    font-family: "Exan";
+    font-size: 14px;
+    margin: -10px 30px 20px 30px;
+}
+
 .dice {
 	display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,6 +115,21 @@ button:hover {
 .img {
     margin: 0 50px 20px 50px;
 }
+
+.trophy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+}
+
 
 @media (max-width: 768px) {
     .intro {

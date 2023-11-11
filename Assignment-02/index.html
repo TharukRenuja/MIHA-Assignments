@@ -21,13 +21,12 @@
         <div class="info">
             <input type="text" id="player1" placeholder="Player 1"><br>
             <input type="text" id="player2" placeholder="Player 2"><br>
-            <center>
-                <button class="info-btn" onclick="getNames()">Let's Roll</button>
-            </center>
+            <button class="info-btn" onclick="getPlayers()">Let's Roll</button>
         </div>
     </div>
     <div class="play" id="play">
         <h1 class="play-title" id="status">Let's Roll the Dice</h1>
+        <p class="wininfo">Whoever scores 5 Rolls first, Wins.</p>
         <div class="dice">
             <div class="dice-box">
                 <p class="play-subtitle" id="player1Name">Player 1</p>
@@ -41,6 +40,12 @@
             </div>
         </div>
         <button class="play-btn" id="roll" onclick="roll()">Let's Roll</button>
+    </div>
+    <div class="trophy" id="trophy">
+        <h1 class="title">Congratulations!</h1>
+        <p class="subtitle"><span id="winner"></span> Won the Match.</p>
+        <img src="assets/img/trophy.png" alt="trophy" width="200px"><br>
+        <button class="reset-btn" id="reset" onclick="reset()">Play Again</button>
     </div>
 
     <script src="assets/js/script.js"></script>
